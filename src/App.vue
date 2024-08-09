@@ -1,18 +1,30 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import { RouterLink, RouterView } from 'vue-router';
+import HelloWorld from './components/HelloWorld.vue';
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <img
+      alt="Vue logo"
+      class="logo"
+      src="@/assets/logo.svg"
+      width="125"
+      height="125"
+    />
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <HelloWorld msg="You did it!" msg2="변수출력해보기" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/template">템플릿 문법</RouterLink>
+        <RouterLink to="/reactivity">반응 상태</RouterLink>
+        <RouterLink to="/computed">계산된 속성</RouterLink>
+        <RouterLink to="/conditional">조건부 렌더링</RouterLink>
+        <RouterLink to="/list">리스트 렌더링</RouterLink>
+        <RouterLink to="/event">이벤트 핸들링</RouterLink>
       </nav>
     </div>
   </header>
