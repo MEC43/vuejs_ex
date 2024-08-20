@@ -44,6 +44,31 @@ const router = createRouter({
       name: 'event',
       component: () => import('../views/EventView.vue')
     },
+    {
+      path: '/form',
+      name: 'form',
+      component: () => import('../views/FormView.vue')
+    },
+    {
+      path: '/lifecycle',
+      name: 'lifecycle',
+      component: () => import('../views/LifecycleView.vue')
+    },
+    {
+      path: '/watchers',
+      name: 'watchers',
+      component: () => import('../views/WatchersView.vue')
+    },
+    {
+      path: '/refs',
+      name: 'refs',
+      component: () => import('../views/RefsView.vue')
+    },
+    {
+      path: '/comp_basic',
+      name: 'comp_basic',
+      component: () => import('../views/CbView.vue')
+    },
   ]
 })
 
